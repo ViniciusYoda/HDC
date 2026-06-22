@@ -1,53 +1,57 @@
+/* Gerais */
 body {
-    font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .row {
-    margin: 0;
+  margin: 0;
 }
 
 .container {
-    padding: 70px 0;
+  padding: 70px 0;
 }
 
 p, li {
-    color: #444;
-    font-size: 14px;
+  color: #444;
+  font-size: 14px;
 }
 
+/* Barra de navegação */
 header, .navbar {
-    background-color: #353D41;
+  background-color: #353D41;
 }
 
 #nav-container {
-    padding-top: 0;
-    padding-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 #logo {
-    width: 75px;
+  width: 75px;
 }
 
 .navbar-brand {
-    padding: 0;
-    color: #FFF;
+  padding: 0;
+  color: #FFF;
 }
 
 .navbar-brand:hover {
-    color: #FFF;
+  color: #FFF;
 }
 
 #navbar-links a {
-    color: #FFF;
+  color: #FFF;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
-    padding: 1rem .8rem
+  padding: 1rem .8rem;
 }
 
 .nav-item.active {
-    border-bottom: 3px solid #FFF;
+  border-bottom: 3px solid #FFF;
 }
+
+/* Slider */
 
 .container-fluid {
   padding: 0;
@@ -96,37 +100,38 @@ header, .navbar {
   background-color: #65DAF9;
 }
 
-#about-area {
-    background-color: #F9F9F9;
+/* Sobre a empresa */
 
+#about-area {
+  background-color: #F9F9F9;
 }
 
 .main-title {
-    color: #444;
-    margin: 0 0 65px 0;
-    font-size: 40px;
-    text-align: center;
+  color: #444;
+  margin: 0 0 65px 0;
+  font-size: 40px;
+  text-align: center;
 }
 
 .main-title::after {
-    content: "";
-    border-top: 2px solid #333;
-    width: 15%;
-    position: absolute;
-    top: 60px;
-    left: 42.5%;
+  content: "";
+  border-top: 2px solid #333;
+  width: 15%;
+  position: absolute;
+  top: 60px;
+  left: 42.5%;
 }
 
 .about-title {
-    font-size: 17px;
-    color: #444;
-    text-transform: uppercase;
-    font-weight: bold;
+  font-size: 17px;
+  color: #444;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 #about-list {
-    list-style: none;
-    padding-left: 0;
+  list-style: none;
+  padding-left: 0;
 }
 
 #about-list li {
@@ -138,6 +143,8 @@ header, .navbar {
   margin-right: 15px;
 }
 
+/* Serviços */
+
 .service-box {
   text-align: center;
   margin-bottom: 50px;
@@ -148,7 +155,7 @@ header, .navbar {
 }
 
 .service-box i {
-  font-size: 24px;
+  font-size: 36px;
   margin-bottom: 20px;
   color: #444;
 }
@@ -161,6 +168,8 @@ header, .navbar {
 .service-box:hover > i, .service-box:hover > h4 {
   color: #65DAF9;
 }
+
+/* Dados */
 
 .circle-box div {
   padding: 0 40px;
@@ -178,9 +187,13 @@ header, .navbar {
   margin-top: 20px;
 }
 
+/* Time */
+
 .card-body {
   text-align: center;
 }
+
+/* Trabalhe conosco */
 
 #apply-area {
   height: 500px;
@@ -192,6 +205,7 @@ header, .navbar {
 
 #apply-area .apply-box {
   padding: 70px 50px;
+  text-align: center;
 }
 
 #company-img {
@@ -230,6 +244,8 @@ header, .navbar {
   background-color: #65DAF9;
 }
 
+/* Portfólio */
+
 .project-box {
   margin-bottom: 30px;
 }
@@ -258,7 +274,9 @@ header, .navbar {
   background-color: #65DAF9;
 }
 
-#news-areas {
+/* News Letter */
+
+#news-area {
   text-align: center;
   background-color: #F9F9F9;
 }
@@ -298,13 +316,15 @@ header, .navbar {
   color: #65DAF9;
 }
 
+/* Call To Action */
+
 #call-area {
   background-color: #65DAF9;
   text-transform: uppercase;
 }
 
 #call-area .container {
-  padding: 409px 100px;
+  padding: 40px 100px;
 }
 
 #call-area .row {
@@ -333,6 +353,8 @@ header, .navbar {
   letter-spacing: 2px;
 }
 
+/* Footer */
+
 #contact-area {
   text-align: center;
 }
@@ -358,12 +380,7 @@ header, .navbar {
   font-size: 16px;
 }
 
-.contact-title {
-  font-weight: bold;
-  color: #3EC1D5;
-}
-
-#msg-box p {
+.contact-tile {
   font-weight: bold;
   color: #3EC1D5;
 }
@@ -386,8 +403,10 @@ header, .navbar {
   color: #3EC1D5;
 }
 
+/* Copy */
+
 #copy-area {
-  background-color: #f1f1f1;
+  background-color: #F1F1F1;
 }
 
 #copy-area .container {
@@ -407,4 +426,179 @@ header, .navbar {
 #copy-area .container a:hover {
   text-decoration: none;
   color: #3EC1D5;
+}
+
+/* responsive */
+@media(max-width: 768px) {
+  
+  /* geral */
+  .container {
+    padding: 20px 0;
+  }
+  
+  /* slider */
+  #mainSlider .carousel-inner, #mainSlider .carousel-item {
+    height: auto;
+  }
+
+  #mainSlider .carousel-caption h2 {
+    font-size: 28px;
+  }
+
+  #mainSlider .carousel-caption p {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+
+  .carousel-caption {
+    left: 10%;
+    right: 10%;
+  }
+  
+  /* about */
+  #about-area img {
+    margin-top: 100px;
+  }
+  
+  /* data */
+  .circle-box div {
+    padding: 0 10px;
+  }
+
+  #data-area p {
+    font-size: 16px;
+  }
+  
+  /* team */
+  .card-title {
+    font-size: 14px;
+  }
+
+  .card-text {
+    font-size: 12px;
+  }
+
+  /* apply */
+  #apply-area .apply-box {
+    padding: 50px 25px;
+  }
+
+  /* news */
+  #news-area p {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #email-input {
+    width: 70%;
+  }
+
+  #call-area {
+    margin-top: 30px;
+  }
+
+  #call-area .container {
+    padding: 30px;
+  }
+
+  #call-area p, #call-area #call-btn {
+    font-size: 16px;
+  }
+
+}
+
+
+@media(max-width: 425px) {
+
+  /* slider */
+  #mainSlider {
+    margin-top: 90px;
+  }
+
+  #mainSlider .carousel-caption {
+    top: 5%;
+  }
+
+  #mainSlider .carousel-caption h2 {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+
+  #mainSlider .carousel-caption p {
+    display: none;
+  }
+
+  .carousel-caption .main-btn {
+    
+    font-size: 14px;
+  }
+
+  /* about */
+  .main-title {
+    font-size: 30px;
+  }
+
+  #about-area img {
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+
+  /* data */
+  .circle-box {
+    width: 50%;
+  }
+
+  #team-area .col-md-3 {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+
+  /* apply */
+  #apply-area {
+    height: auto;
+  }
+
+  #company-img {
+    display: none;
+  }
+
+  /* filter */
+  #portfolio-area .filter-btn {
+    margin-bottom: 20px;
+  }
+
+  .project-box {
+    width: 50%;
+  }
+
+  /* news */
+  #news-area .main-title {
+    font-size: 24px;
+  }
+
+  #news-area p {
+    font-size: 16px;
+  }
+
+  #email-input {
+    width: 80%;
+  }
+
+  #call-area p, #call-area #call-btn {
+    font-size: 14px;
+    letter-spacing: 0;
+  }
+
+  #call-area p, #call-area #call-btn {
+    margin: 0;
+    width: 50%;
+  }
+
+  /* contact */
+  .contact-box {
+    border: none;
+    margin-bottom: 0;
+  }
+
 }
